@@ -521,9 +521,11 @@
 /* section process */
 
 
+
+
 .process-section {
-  padding: 80px 20px;
-  background: linear-gradient(to right, #f8fbff, #eef3f9);
+  padding: 90px 20px;
+  background: #f4f7fb;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -532,225 +534,150 @@
   margin: auto;
 }
 
-.img img {
-  width: 500px;
-  height: 400px;
-}
+
+
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 70px;  
 }
 
 .headerh2 {
-  font-size: 36px;
-  color: #1e3a8a;
+  font-size: 2.6rem;
+  color: #0f172a;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
 .headerp {
-  font-size: 16px;
-  color: #555;
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
-  line-height: 1.6;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.7;
 }
+
 
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
 
+
 .process-card {
   background: #ffffff;
-  padding: 40px 25px;
-  border-radius: 15px;
+  padding: 45px 25px;
+  border-radius: 16px;
   text-align: center;
   position: relative;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
 .process-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-12px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
 }
 
 
 .process-icon {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 20px;
-  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  background: #2563eb;
   color: #ffffff;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  font-size: 26px;
-  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+  font-size: 28px;
+  margin-bottom: 20px;
+  transition: 0.3s;
 }
+
+.process-card:hover .process-icon {
+  background: #1e40af;
+  transform: scale(1.1);
+}
+
 
 .process-card h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #1e293b;
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
+
 .process-card p {
-  font-size: 15px;
-  color: #555;
+  font-size: 0.95rem;
+  color: #64748b;
   line-height: 1.6;
 }
 
+
 .step-number {
   position: absolute;
-  bottom: 15px;
+  top: 15px;
   right: 20px;
-  font-size: 50px;
-  font-weight: bold;
-  color: rgba(95, 27, 21, 0.05);
-}
-
-/* ===============================
-   Large Devices (≤1200px)
-================================= */
-@media (max-width: 1200px) {
-
-  .process-section {
-    padding: 70px 40px;
-  }
-
-  .container {
-    max-width: 100%;
-  }
-
-  .headerh2 {
-    font-size: 32px;
-  }
-
-  .headerp {
-    font-size: 15px;
-  }
-
-  .img img {
-    width: 100%;
-    height: auto;
-    max-width: 450px;
-    margin: auto;
-    display: block;
-  }
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(37, 99, 235, 0.08);
 }
 
 
-/* ===============================
-   Tablets (≤992px)
-================================= */
-@media (max-width: 992px) {
-
-  .process-section {
-    padding: 60px 30px;
-  }
-
-  /* Header Always On Top */
-  .section-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .headerh2 {
-    font-size: 28px;
-  }
-
-  .headerp {
-    font-size: 14px;
-    max-width: 100%;
-  }
-
-  /* Grid becomes 2 columns */
+@media (max-width: 1024px) {
   .process-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-}
-
-
-/* ===============================
-   Mobile Devices (≤768px)
-================================= */
-@media (max-width: 768px) {
-
-  .process-section {
-    padding: 50px 20px;
-  }
-
-  /* Force header on top visually */
-  .section-header {
-    order: -1;
-    width: 100%;
-    margin-bottom: 35px;
   }
 
   .headerh2 {
-    font-size: 24px;
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-section {
+    padding: 70px 15px;
+  }
+
+  .headerh2 {
+    font-size: 1.9rem;
   }
 
   .headerp {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  /* Grid becomes 1 column */
-  .process-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    font-size: 0.95rem;
   }
 
   .process-card {
-    padding: 30px 20px;
+    padding: 35px 20px;
+  }
+
+  .step-number {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .headerh2 {
+    font-size: 1.6rem;
+  }
+
+  .headerp {
+    font-size: 0.85rem;
   }
 
   .process-icon {
-    width: 55px;
-    height: 55px;
-    font-size: 20px;
-  }
-
-  .step-number {
-    font-size: 36px;
-    bottom: 10px;
-    right: 15px;
-  }
-
-  .img img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
-/* ===============================
-   Small Mobile (≤480px)
-================================= */
-@media (max-width: 480px) {
-
-  .headerh2 {
-    font-size: 20px;
-  }
-
-  .headerp {
-    font-size: 13px;
-  }
-
-  .process-card {
-    padding: 25px 15px;
-  }
-
-  .step-number {
-    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
   }
 }
 
