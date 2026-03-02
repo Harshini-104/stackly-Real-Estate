@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Dashboard</title>
+  <link rel="stylesheet" href="./dashboard2.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+  <header class="real-header">
+    <div class="container">
+
+      <div class="logo">
+       <a href=""> <img src="./image/logo.webp" alt="Logo"></a>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="./home2.html">Home</a></li>
+          <li><a href="./about2.html">About</a></li>
+          <li><a href="./properties.html">Properties</a></li>
+          <li><a href="./blog2.html">Blog</a></li>
+          <li><a href="./dashboard2.html">Dashboard</a></li>
+          <li><a href="./contact2.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="./login2.html" class="login-btn">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </a>
+
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="dashboard">
+
+    <h1 data-aos="zoom-in">Real Estate Sales Dashboard</h1>
+
+    <!-- ===== KPI CARDS ===== -->
+    <div class="kpi-container">
+
+      <div class="kpi-card" data-aos="zoom-in">
+        <h3>Total Properties Sold</h3>
+        <h2>1,245</h2>
+        <p class="positive">+12% This Month</p>
+      </div>
+
+      <div class="kpi-card" data-aos="zoom-in">
+        <h3>Total Revenue</h3>
+        <h2>₹8.6 Cr</h2>
+        <p class="positive">+18% Growth</p>
+      </div>
+
+      <div class="kpi-card" data-aos="zoom-in">
+        <h3>Active Listings</h3>
+        <h2>320</h2>
+        <p class="neutral">Stable</p>
+      </div>
+
+      <div class="kpi-card" data-aos="zoom-in">
+        <h3>New Leads</h3>
+        <h2>540</h2>
+        <p class="negative">-3% This Week</p>
+      </div>
+
+    </div>
+
+    <!-- ===== CHART SECTION ===== -->
+    <div class="charts-container">
+
+      <div class="chart-box" data-aos="zoom-in">
+        <h3>Monthly Property Sales</h3>
+        <canvas id="salesChart"></canvas>
+      </div>
+
+      <div class="chart-box" data-aos="zoom-in">
+        <h3>Property Type Distribution</h3>
+        <canvas id="typeChart"></canvas>
+      </div>
+
+    </div>
+
+    <div class="charts-container">
+
+      <div class="chart-box full" data-aos="zoom-in">
+        <h3>Monthly Revenue (in Crores)</h3>
+        <canvas id="revenueChart"></canvas>
+      </div>
+
+    </div>
+
+    <!-- ===== TABLE ===== -->
+    <div class="table-section" data-aos="zoom-in" >
+      <h3>Recent Property Transactions</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Location</th>
+            <th>Price</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Luxury Villa</td>
+            <td>Anna Nagar</td>
+            <td>₹2.4 Cr</td>
+            <td class="sold">Sold</td>
+          </tr>
+          <tr>
+            <td>2BHK Apartment</td>
+            <td>Velachery</td>
+            <td>₹75 Lakh</td>
+            <td class="pending">Pending</td>
+          </tr>
+          <tr>
+            <td>Commercial Office</td>
+            <td>T Nagar</td>
+            <td>₹3.1 Cr</td>
+            <td class="sold">Sold</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- footer section -->
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Company About -->
+      <div class="footer-about">
+        <img src="./image/logo.webp" alt="Real Estate Logo" class="comlogo">
+        <p>
+          Your trusted real estate partner for luxury homes, commercial spaces, and prime property
+          investments. We help you find the perfect property with transparency and expert guidance.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./home2.html">Home</a></li>
+          <li><a href="./about2.html">About Us</a></li>
+          <li><a href="./properties.html">Properties</a></li>
+          <li><a href="./dashboard2.html">Dashboard</a></li>
+          <li><a href="./contact2.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-support">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="./home2.html#featued">Featured Properties</a></li>
+          <li><a href="./about2.html#categories">Categories</a></li>
+          <li><a href="./about2.html#review">Review</a></li>
+          <li><a href="./about2.html#details">Property Details</a></li>
+          <li><a href="./home2.html#choose">Why Choose Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Email:</strong> Stackly@realestate.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> Chennai, Tamil Nadu</p>
+
+        <div class="social-icon">
+          <a href="./error2.html"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="./error2.html"><i class="fab fa-instagram"></i></a>
+          <a href="./error2.html"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Stackly Real Estate. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* Sales Chart */
+    new Chart(document.getElementById("salesChart"), {
+      type: "line",
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+          label: "Properties Sold",
+          data: [120, 150, 180, 140, 200, 220],
+          borderColor: "#3b82f6",
+          backgroundColor: "rgba(59,130,246,0.2)",
+          fill: true,
+          tension: 0.4
+        }]
+      }
+    });
+
+    /* Property Type Chart */
+    new Chart(document.getElementById("typeChart"), {
+      type: "doughnut",
+      data: {
+        labels: ["Apartments", "Villas", "Commercial", "Plots"],
+        datasets: [{
+          data: [45, 25, 20, 10],
+          backgroundColor: ["#3b82f6", "#10b981", "#f59e0b", "#ef4444"]
+        }]
+      }
+    });
+
+    /* Revenue Chart */
+    new Chart(document.getElementById("revenueChart"), {
+      type: "bar",
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+          label: "Revenue (Cr)",
+          data: [1.2, 1.5, 1.8, 1.4, 2.0, 2.3],
+          backgroundColor: "#6366f1"
+        }]
+      }
+    });
+  </script>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+    const dropdown = document.querySelector(".dropdown");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    dropdown.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
+    });
+  </script>
+
+  <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
+
+</body>
+
+</html>

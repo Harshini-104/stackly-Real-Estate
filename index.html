@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+  <header class="real-header">
+    <div class="container">
+
+      <div class="logo">
+        <a href=""><img src="./image/logo.webp" alt="Logo"></a>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <div class="dropdown">
+            <li><a href="./index.html">Home ▼</a></li>
+            <div class="dropdown-content">
+              <li><a href="./home2.html">Home2</a></li>
+            </div>
+          </div>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="./login.html" class="login-btn">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </a>
+
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- section main -->
+
+  <section class="real-hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 data-aos="zoom-in">Find Your Dream Home</h1>
+      <p data-aos="zoom-in">Discover the perfect property that matches your lifestyle and budget.</p>
+    </div>
+  </section>
+
+  <!-- section featured properties -->
+
+  <section class="featured-properties">
+    <div class="section-header">
+      <h2 data-aos="zoom-in">Featured Properties</h2>
+      <p data-aos="zoom-in">Explore our handpicked premium properties</p>
+    </div>
+
+    <div class="properties-grid">
+
+      <!-- Property 1 -->
+      <div class="property-card" data-aos="zoom-in">
+        <div class="property-image">
+          <img src="./image/villa.webp" alt="Luxury Villa">
+          <span class="price">₹1.25 Cr</span>
+        </div>
+        <div class="property-details">
+          <h3>Luxury Garden Villa</h3>
+          <p class="location">Chennai, ECR</p>
+          <div class="property-info">
+            <span>4 Beds</span>
+            <span>3 Baths</span>
+            <span>3200 Sq.ft</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 2 -->
+      <div class="property-card" data-aos="zoom-in">
+        <div class="property-image">
+          <img src="./image/apartment.webp" alt="Modern Apartment">
+          <span class="price">₹75 Lakh</span>
+        </div>
+        <div class="property-details">
+          <h3>Premium City Apartment</h3>
+          <p class="location">Bangalore, Whitefield</p>
+          <div class="property-info">
+            <span>3 Beds</span>
+            <span>2 Baths</span>
+            <span>1800 Sq.ft</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 3 -->
+      <div class="property-card" data-aos="zoom-in">
+        <div class="property-image">
+          <img src="./image/flat.webp" alt="Luxury Flat">
+          <span class="price">₹98 Lakh</span>
+        </div>
+        <div class="property-details">
+          <h3>Skyline View Flat</h3>
+          <p class="location">Hyderabad, Gachibowli</p>
+          <div class="property-info">
+            <span>3 Beds</span>
+            <span>3 Baths</span>
+            <span>2100 Sq.ft</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 4 -->
+      <div class="property-card" data-aos="zoom-in">
+        <div class="property-image">
+          <img src="./image/office.webp" alt="Commercial Space">
+          <span class="price">₹1.8 Cr</span>
+        </div>
+        <div class="property-details">
+          <h3>Commercial Office Space</h3>
+          <p class="location">Chennai, OMR</p>
+          <div class="property-info">
+            <span>5000 Sq.ft</span>
+            <span>Parking</span>
+            <span>Furnished</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section why choose us -->
+
+  <section class="why-choose" data-aos="fade-up">
+    <div class="why-container">
+
+      <div class="why-header">
+        <h2 data-aos="zoom-in">Why Choose Us</h2>
+        <p data-aos="zoom-in">
+          At Our Real Estate Company, we combine expertise, trust, and dedication
+          to help you find the perfect property. Our team ensures a smooth and
+          stress-free experience from start to finish.
+        </p>
+      </div>
+
+      <div class="why-cards">
+
+        <div class="why-card" data-aos="zoom-in">
+          <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Trusted Experts</h3>
+          <p>Years of industry experience with a proven track record of successful deals.</p>
+        </div>
+
+        <div class="why-card" data-aos="zoom-in">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Prime Listings</h3>
+          <p>Access to premium residential and commercial properties in top locations.</p>
+        </div>
+
+        <div class="why-card" data-aos="zoom-in">
+          <div class="icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <h3>Transparent Process</h3>
+          <p>No hidden charges. Clear documentation and honest guidance at every step.</p>
+        </div>
+
+        <div class="why-card" data-aos="zoom-in">
+          <div class="icon"><i class="fa-solid fa-user-group"></i></div>
+          <h3>Personalized Support</h3>
+          <p>We tailor our services to match your lifestyle, preferences, and budget.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section city -->
+
+  <section class="explore-section">
+    <div class="explore-container">
+
+      <div class="explore-left">
+        <h2 data-aos="zoom-in">Explore Cities</h2>
+        <p data-aos="zoom-in">
+          Discover premium real estate opportunities across top cities.
+          Find apartments, villas, and commercial spaces in the most
+          demanded investment locations with high growth potential.
+        </p>
+      </div>
+
+      <div class="explore-grid">
+
+        <div class="city-card" data-aos="zoom-in">
+          <img src="./image/city1.webp" alt="Chicago">
+          <div class="city-overlay">
+            <span class="property-count">13 Properties</span>
+            <h3>Chicago</h3>
+            <div class="bottom-text">
+              <span>MORE DETAILS</span>
+              <span class="arrow">▶</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-card" data-aos="zoom-in">
+          <img src="./image/city2.webp" alt="Miami">
+          <div class="city-overlay">
+            <span class="property-count">14 Properties</span>
+            <h3>Miami</h3>
+            <div class="bottom-text">
+              <span>MORE DETAILS</span>
+              <span class="arrow">▶</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- City 3 -->
+        <div class="city-card" data-aos="zoom-in">
+          <img src="./image/city3.webp" alt="New York">
+          <div class="city-overlay">
+            <span class="property-count">10 Properties</span>
+            <h3>New York</h3>
+            <div class="bottom-text">
+              <span>MORE DETAILS</span>
+              <span class="arrow">▶</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- City 4 -->
+        <div class="city-card" data-aos="zoom-in">
+          <img src="./image/city4.webp" alt="Los Angeles">
+          <div class="city-overlay">
+            <span class="property-count">14 Properties</span>
+            <h3>Los Angeles</h3>
+            <div class="bottom-text">
+              <span>MORE DETAILS</span>
+              <span class="arrow">▶</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- section stat -->
+
+  <section class="real-estate-cta">
+
+    <div class="cta-overlay"></div>
+
+    <div class="cta-content">
+      <h2  data-aos="fade-up">
+        Find your perfect property with our wide range of real estate services
+        designed to help you buy, sell, and rent with confidence.
+      </h2>
+
+      <div class="cta-box"  data-aos="fade-up">
+
+        <div class="cta-item">
+          <i class="fa-solid fa-house"></i>
+          <p>LOOKING TO BUY</p>
+        </div>
+
+        <div class="cta-item">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <p>SELL YOUR HOME</p>
+        </div>
+
+        <div class="cta-item">
+          <i class="fa-solid fa-key"></i>
+          <p>RENT A PLACE</p>
+        </div>
+
+        <div class="cta-item">
+          <i class="fa-solid fa-headset"></i>
+          <p>NEED HELP?</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- section propety -->
+
+  <section class="property-section" id="type">
+
+    <div class="section-title">
+      <h2 data-aos="zoom-in">Display Different Content Types</h2>
+      <p data-aos="zoom-in">
+        Explore various property categories including apartments, villas,
+        commercial spaces, and luxury homes with flexible layouts and styles.
+      </p>
+    </div>
+
+    <div class="property-grid">
+
+
+      <div class="property-card medium" data-aos="zoom-in">
+        <img src="./image/apartment1.webp">
+        <div class="property-info">
+          <h3>APARTMENT</h3>
+          <span>17 PROPERTIES</span>
+        </div>
+      </div>
+
+
+      <div class="property-card large" data-aos="zoom-in">
+        <img src="./image/villa1.webp">
+        <div class="property-info">
+          <h3>VILLA</h3>
+          <span>10 PROPERTIES</span>
+        </div>
+      </div>
+
+
+      <div class="property-card medium" data-aos="zoom-in">
+        <img src="./image/family.webp">
+        <div class="property-info">
+          <h3>SINGLE FAMILY HOME</h3>
+          <span>10 PROPERTIES</span>
+        </div>
+      </div>
+
+
+      <div class="property-card small" data-aos="zoom-in">
+        <img src="./image/studio.webp">
+        <div class="property-info">
+          <h3>STUDIO</h3>
+          <span>7 PROPERTIES</span>
+        </div>
+      </div>
+
+
+      <div class="property-card small" data-aos="zoom-in">
+        <img src="./image/shop.webp">
+        <div class="property-info">
+          <h3>SHOP</h3>
+          <span>3 PROPERTIES</span>
+        </div>
+      </div>
+
+
+      <div class="property-card medium" data-aos="zoom-in">
+        <img src="./image/office.webp">
+        <div class="property-info">
+          <h3>OFFICE</h3>
+          <span>3 PROPERTIES</span>
+        </div>
+      </div>
+
+
+      <div class="property-card medium" data-aos="zoom-in">
+        <img src="./image/condo.webp">
+        <div class="property-info">
+          <h3>CONDO</h3>
+          <span>1 PROPERTY</span>
+        </div>
+      </div>
+
+
+      <div class="property-card medium" data-aos="zoom-in">
+        <img src="./image/lot.webp">
+        <div class="property-info">
+          <h3>LOT</h3>
+          <span>1 PROPERTY</span>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- section team -->
+
+  <section class="team">
+    <div class="team-container">
+
+      <div class="team-title">
+        <h2 data-aos="zoom-in">Meet Our Expert Team</h2>
+        <p data-aos="zoom-in">Professional agents dedicated to helping you find your perfect property.</p>
+      </div>
+
+      <div class="team-cards">
+
+        <!-- Card 1 -->
+        <div class="team-card" data-aos="zoom-in">
+          <div class="team-img">
+            <img src="./image/team1.webp" alt="">
+          </div>
+          <h3>John Smith</h3>
+          <span>Senior Property Agent</span>
+
+          <button class="social-toggle">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <div class="social-icons">
+            <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="team-card" data-aos="zoom-in">
+          <div class="team-img">
+            <img src="./image/team2.avif" alt="">
+          </div>
+          <h3>Emma Williams</h3>
+          <span>Sales Manager</span>
+
+          <button class="social-toggle">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <div class="social-icons">
+            <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="team-card" data-aos="zoom-in">
+          <div class="team-img">
+            <img src="./image/team3.webp" alt="">
+          </div>
+          <h3>Michael Brown</h3>
+          <span>Property Consultant</span>
+
+          <button class="social-toggle">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <div class="social-icons">
+            <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="team-card" data-aos="zoom-in">
+          <div class="team-img">
+            <img src="./image/team4.avif" alt="">
+          </div>
+          <h3>Sophia Johnson</h3>
+          <span>Marketing Head</span>
+
+          <button class="social-toggle">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <div class="social-icons">
+            <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section popular location -->
+
+  <section class="popular-locations">
+    <div class="location-header">
+      <h2 data-aos="fade-up">Popular Locations</h2>
+      <p data-aos="fade-up">Explore high-demand real estate investment areas</p>
+    </div>
+
+    <div class="location-list">
+
+      <div class="location-item" data-aos="fade-up">
+        <div class="location-left">
+          <h3>Chennai – OMR</h3>
+          <p>IT corridor with premium apartments and strong rental demand.</p>
+        </div>
+        <div class="location-right">
+          <span>120+ Properties</span>
+          <span>Avg ₹85 Lakh</span>
+        </div>
+      </div>
+
+      <div class="location-item" data-aos="fade-up">
+        <div class="location-left">
+          <h3>Bangalore – Whitefield</h3>
+          <p>Prime residential hub near tech parks and metro connectivity.</p>
+        </div>
+        <div class="location-right">
+          <span>95+ Properties</span>
+          <span>Avg ₹1.1 Cr</span>
+        </div>
+      </div>
+
+      <div class="location-item" data-aos="fade-up">
+        <div class="location-left">
+          <h3>Hyderabad – Gachibowli</h3>
+          <p>High-growth zone with gated communities and IT offices.</p>
+        </div>
+        <div class="location-right">
+          <span>80+ Properties</span>
+          <span>Avg ₹90 Lakh</span>
+        </div>
+      </div>
+
+      <div class="location-item" data-aos="fade-up">
+        <div class="location-left">
+          <h3>Mumbai – Navi Mumbai</h3>
+          <p>Rapid infrastructure growth with strong ROI potential.</p>
+        </div>
+        <div class="location-right">
+          <span>150+ Properties</span>
+          <span>Avg ₹1.5 Cr</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section inquiry -->
+
+  <section class="real-inquiry">
+    <div class="inquiry-container">
+
+      <!-- Left Side - Stats -->
+      <div class="inquiry-stats">
+        <h2 data-aos="zoom-in">Your Trusted Real Estate Partner</h2>
+        <p data-aos="zoom-in">Helping you find the perfect property with trust, transparency, and expertise.</p>
+
+        <div class="stats-box">
+          <div class="stat" data-aos="zoom-in">
+            <h3>500+</h3>
+            <span>Properties Sold</span>
+          </div>
+
+          <div class="stat" data-aos="zoom-in">
+            <h3>120+</h3>
+            <span>Happy Clients</span>
+          </div>
+
+          <div class="stat" data-aos="zoom-in">
+            <h3>15+</h3>
+            <span>Years Experience</span>
+          </div>
+
+          <div class="stat" data-aos="zoom-in">
+            <h3>25+</h3>
+            <span>Locations Covered</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Form -->
+      <div class="inquiry-form" data-aos="zoom-in">
+        <h2>Send Us an Inquiry</h2>
+
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone Number" required>
+
+          <select required>
+            <option value="">Property Type</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Commercial</option>
+          </select>
+
+          <textarea placeholder="Your Message" rows="4"></textarea>
+
+          <button type="submit">Submit Inquiry</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section footer -->
+
+  <footer class="real-footer">
+    <div class="footer-container">
+
+      <!-- Logo & About -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="./image/logo.webp" alt="Real Estate Logo">
+        </div>
+        <p>
+          We provide trusted real estate services with premium apartments,
+          villas, condos and commercial properties tailored to your lifestyle.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="./about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="./properties.html"><i class="fa-solid fa-angle-right"></i> Properties</a></li>
+          <li><a href="./blog.html"><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+          <li><a href="./contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Property Types -->
+      <div class="footer-col">
+        <h3>Property Types</h3>
+        <ul>
+          <li><a href="./index.html#type"><i class="fa-solid fa-building"></i> Apartment</a></li>
+          <li><a href="./index.html#type"><i class="fa-solid fa-house"></i> Villa</a></li>
+          <li><a href="./index.html#type"><i class="fa-solid fa-city"></i> Condo</a></li>
+          <li><a href="./index.html#type"><i class="fa-solid fa-shop"></i> Shop</a></li>
+          <li><a href="./index.html#type"><i class="fa-solid fa-briefcase"></i> Office</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</li>
+          <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fa-solid fa-envelope"></i> stackly@realestate.com</li>
+        </ul>
+
+        <div class="social-icons">
+          <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+          <a href="./error.html"><i class="fa-brands fa-twitter"></i></a>
+          <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2026 Stackly RealEstate. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+    const dropdown = document.querySelector(".dropdown");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    dropdown.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
+    });
+  </script>
+
+  <script>
+        const cards = document.querySelectorAll(".team-card");
+
+        cards.forEach(card => {
+            const btn = card.querySelector(".social-toggle");
+
+            btn.addEventListener("click", () => {
+
+                cards.forEach(item => {
+                    if (item !== card) {
+                        item.classList.remove("active");
+                    }
+                });
+
+                card.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
+
+</body>
+
+</html>

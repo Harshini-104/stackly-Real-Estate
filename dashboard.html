@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate</title>
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./dashboard.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+  <header class="real-header">
+    <div class="container">
+
+      <div class="logo">
+        <a href=""><img src="./image/logo.webp" alt="Logo"></a>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+
+        <a href="./login.html" class="login-btn">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </a>
+
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+      </div>
+
+    </div>
+  </header>
+
+  <div class="dashboard">
+
+    <h1 class="dashboard-title" data-aos="zoom-in">Real Estate Analytics Dashboard</h1>
+
+    <!-- TOP STAT CARDS -->
+    <div class="stats-container">
+
+      <div class="card" data-aos="zoom-in">
+        <div class="icon blue"><i class="fa-solid fa-building"></i></div>
+        <h3>Total Properties</h3>
+        <h2>1,245</h2>
+        <p class="positive">+12% from last month</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <div class="icon green"><i class="fa-solid fa-house"></i></div>
+        <h3>Active Listings</h3>
+        <h2>875</h2>
+        <p>Residential & Commercial</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <div class="icon orange"><i class="fa-solid fa-check-circle"></i></div>
+        <h3>Properties Sold</h3>
+        <h2>320</h2>
+        <p class="positive">+8% Closed Deals</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <div class="icon purple"><i class="fa-solid fa-dollar-sign"></i></div>
+        <h3>Total Revenue</h3>
+        <h2>$2.4M</h2>
+        <p>This Quarter</p>
+      </div>
+
+    </div>
+
+    <!-- CHART SECTION -->
+    <div class="charts">
+
+      <div class="chart-box" data-aos="zoom-in">
+        <h3>Monthly Sales Overview</h3>
+        <canvas id="salesChart"></canvas>
+      </div>
+
+      <div class="chart-box" data-aos="zoom-in">
+        <h3>Property Type Distribution</h3>
+        <canvas id="propertyChart"></canvas>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ADDITIONAL SECTION -->
+  <div class="extra-section">
+
+    <!-- Revenue Comparison -->
+    <div class="chart-box" data-aos="zoom-in">
+      <h3>Quarterly Revenue Comparison</h3>
+      <canvas id="revenueChart"></canvas>
+    </div>
+
+    <!-- Recent Properties Table -->
+    <div class="table-box" data-aos="zoom-in">
+      <h3>Recent Properties</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Location</th>
+            <th>Price</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Luxury Villa</td>
+            <td>Chennai</td>
+            <td>$450,000</td>
+            <td class="sold">Sold</td>
+          </tr>
+          <tr>
+            <td>Commercial Office</td>
+            <td>Bangalore</td>
+            <td>$780,000</td>
+            <td class="active">Active</td>
+          </tr>
+          <tr>
+            <td>Modern Apartment</td>
+            <td>Hyderabad</td>
+            <td>$220,000</td>
+            <td class="pending">Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Agents & Activity -->
+  <div class="bottom-widgets">
+
+    <div class="widget" data-aos="zoom-in">
+      <h3>Top Performing Agents</h3>
+      <ul>
+        <li>👤 Priya Sharma - 25 Sales</li>
+        <li>👤 Arjun Kumar - 18 Sales</li>
+        <li>👤 Sneha Reddy - 15 Sales</li>
+      </ul>
+    </div>
+
+    <div class="widget" data-aos="zoom-in">
+      <h3>Recent Activities</h3>
+      <ul>
+        <li>🏠 New property added in Chennai</li>
+        <li>💰 Sale closed for Villa</li>
+        <li>📞 New client inquiry received</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+   <footer class="real-footer">
+    <div class="footer-container">
+
+      <!-- Logo & About -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="./image/logo.webp" alt="Real Estate Logo">
+        </div>
+        <p>
+          We provide trusted real estate services with premium apartments,
+          villas, condos and commercial properties tailored to your lifestyle.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="./about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="./properties.html"><i class="fa-solid fa-angle-right"></i> Properties</a></li>
+          <li><a href="./blog.html"><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+          <li><a href="./contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Property Types -->
+      <div class="footer-col">
+        <h3>Property Types</h3>
+        <ul>
+          <li><a href="./index.html#type"><i class="fa-solid fa-building"></i> Apartment</a></li>
+          <li><a href="./index.html#type"><i class="fa-solid fa-house"></i> Villa</a></li>
+          <li><a href="./index.html#type"><i class="fa-solid fa-city"></i> Condo</a></li>
+          <li><a href="./index.html#type"><i class="fa-solid fa-shop"></i> Shop</a></li>
+          <li><a href="./index.html#type"><i class="fa-solid fa-briefcase"></i> Office</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</li>
+          <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fa-solid fa-envelope"></i> stackly@realestate.com</li>
+        </ul>
+
+        <div class="social-icons">
+          <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+          <a href="./error.html"><i class="fa-brands fa-twitter"></i></a>
+          <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2026 Stackly RealEstate. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+
+    const revenueChart = new Chart(document.getElementById('revenueChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+        datasets: [{
+          label: 'Revenue ($)',
+          data: [500000, 750000, 620000, 900000],
+          backgroundColor: '#4e73df'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true
+          }
+        }
+      }
+    });
+
+    const salesChart = new Chart(document.getElementById('salesChart'), {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+          label: 'Properties Sold',
+          data: [50, 75, 60, 90, 120, 150],
+          borderColor: '#4e73df',
+          backgroundColor: 'rgba(78,115,223,0.1)',
+          fill: true,
+          tension: 0.4,
+          pointRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true
+          }
+        }
+      }
+    });
+
+    const propertyChart = new Chart(document.getElementById('propertyChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Residential', 'Commercial', 'Apartments'],
+        datasets: [{
+          data: [55, 25, 20],
+          backgroundColor: ['#4e73df', '#1cc88a', '#f6c23e']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+
+  </script>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+    const dropdown = document.querySelector(".dropdown");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    dropdown.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
+    });
+  </script>
+
+  <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
+
+</body>
+
+</html>
