@@ -1317,7 +1317,6 @@
 
 /* section footer */
 
-
 .real-footer {
   background: #0f172a;
   color: #ffffff;
@@ -1394,11 +1393,11 @@
 }
 
 
-.social-icons {
+.social-icon {
   margin-top: 20px;
 }
 
-.social-icons a {
+.social-icon a {
   display: inline-block;
   width: 38px;
   height: 38px;
@@ -1411,7 +1410,7 @@
   transition: 0.3s;
 }
 
-.social-icons a:hover {
+.social-icon a:hover {
   background: #22c55e;
   transform: translateY(-5px);
 }
